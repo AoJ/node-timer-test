@@ -16,7 +16,7 @@ setInterval( function() {
     if(times.length > 3) {
         rank = ~~(Math.max.apply(null, times) / interval * -100)
         console.log("timer precision", rank, "%")
-        if(rand <= 100) process.exit(0)
+        if(rank <= 100) process.exit(0)
         else process.exit(1)
     }
     times.push( new Date())

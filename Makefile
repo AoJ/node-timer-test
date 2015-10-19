@@ -1,5 +1,5 @@
-
 test:
-  node test.js
-  
+	node test.js
+
+
 .PHONY: test

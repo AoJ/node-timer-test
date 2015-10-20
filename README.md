@@ -1,2 +1,2 @@
 # node-timer-test 
-only testing ;)
+only testing :)

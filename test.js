@@ -14,7 +14,7 @@ setInterval( function() {
     var took = new Date() - start
     console.log(new Date(), "background work done in", took)
     if(times.length > 3) {
-        rank = ~~(Math.max.apply(null, times) / interval * -100)
+        rank = ~~(Math.min.apply(null, times) / interval * -100)
         console.log("timer precision", rank, "%")
         if(rank <= 100) process.exit(0)
         else process.exit(1)
